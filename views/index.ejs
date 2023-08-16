@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.ejs'); %>
+  </head>
+  <body>
+    <header>
+      <%- include('partials/header.ejs'); %>
+    </header>
+    <main class="container">
+        <% if (title == "Home") { %>
+            <% include pages/home.ejs %>
+          <% } %>
+          <% if (title == "About Me") { %>
+            <% include pages/about.ejs %>
+          <% } %>
+          <% if (title == "Projects") { %>
+            <% include pages/projects.ejs %>
+          <% } %>
+          <% if (title == "Services") { %>
+            <% include pages/services.ejs %>
+          <% } %>
+          <% if (title == "Contact") { %>
+            <% include pages/contact.ejs %>
+          <% } %>
+          <% if (title == "Login") { %>
+            <% include pages/login.ejs %>
+          <% } %>
+          <% if (title == "Business Contacts List") { %>
+            <% include pages/contacts-list.ejs %>
+          <% } %>
+          <% if (title == "Update") { %>
+            <% include pages/update.ejs %>
+          <% } %>
+    </main>
+  </body>
+</html>

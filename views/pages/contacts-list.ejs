@@ -1,0 +1,25 @@
+<div class="business-contacts">
+    <h1><%= title %></h1>
+    <div class="business-contacts-content">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Number</th>
+          <th>Email</th>
+        </tr>
+    <% for(var i = 0; i < contacts.length; i++) {%>
+        <tr>
+          <td><%= contacts[i].name %></td>
+          <td><%= contacts[i].number %></td>
+          <td><%= contacts[i].email %></td>
+          <td>
+            <a href="/update/<%= contacts[i]._id%>">Update</a>
+          </td>
+          <td>
+            <a href="/delete/<%= contacts[i]._id%>" id="delete">Delete</a>
+          </td>
+        </tr>
+    <% } %>
+  </table>
+</div>
+</div>
