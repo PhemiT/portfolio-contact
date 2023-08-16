@@ -250,12 +250,19 @@ a {
   border: 1.5px solid var(--clr-black);
 }
 
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .login > h1 {
   text-align: center;
 }
 
 .login-content {
-  margin-top: 20px;
+  margin: 20px;
   width: 100%;
 }
 
